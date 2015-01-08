@@ -25,11 +25,11 @@
 #include "itkConfigure.h"
 #include "itkMacro.h"
 
-#ifdef ITK_HAVE_UNISTD_H
-# include <unistd.h> // for unlink
-#else
+//#ifdef ITK_HAVE_UNISTD_H
+// # include <unistd.h> // for unlink
+//#else
 # include <io.h>
-#endif
+//#endif
 
 #include <stdio.h> // Borland needs this (cstdio does not work easy)
 #include <fcntl.h>
